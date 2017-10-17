@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  flex: 1;
+}
+
