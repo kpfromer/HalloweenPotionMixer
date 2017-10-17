@@ -1,3 +1,7 @@
 <p>
   cauldron-list works!
 </p>
+
+<div [dragula]='"ingredients-bag"' [dragulaModel]='ingredients' class="list" id="cauldron">
+  <app-ingredient *ngFor="let ingredient of ingredients" [ingredient]="ingredient"></app-ingredient>
+</div>
