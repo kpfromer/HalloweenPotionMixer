@@ -1,3 +1,7 @@
 <p>
   potion-list works!
 </p>
+
+<div [dragula]='"potion-bag"' [dragulaModel]='potions' class="list">
+  <app-potion *ngFor="let potion of potions" [potion]="potion"></app-potion>
+</div>
