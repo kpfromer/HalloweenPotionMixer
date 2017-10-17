@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Ingredient} from '../model/ingredient';
+import {LocalStorage} from 'ngx-store';
 
 @Component({
   selector: 'app-ingredients-list',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngredientsListComponent implements OnInit {
 
-  constructor() { }
+  @LocalStorage('ingredients') ingredients: Ingredient[] = [];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
