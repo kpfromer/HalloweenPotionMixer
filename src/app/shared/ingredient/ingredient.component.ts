@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Ingredient} from '../../model/ingredient';
 
 @Component({
   selector: 'app-ingredient',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ingredient.component.css']
 })
 export class IngredientComponent implements OnInit {
+
+  @Input() ingredient: Ingredient;
 
   constructor() { }
 
