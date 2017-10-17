@@ -1,13 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
 import {IngredientsListComponent} from './ingredients-list/ingredients-list.component';
 import {CauldronListComponent} from './cauldron-list/cauldron-list.component';
 import {PotionListComponent} from './potion-list/potion-list.component';
 import {DragulaModule} from 'ng2-dragula';
-import { IngredientComponent } from './ingredient/ingredient.component';
-import { PotionComponent } from './potion/potion.component';
+import {IngredientComponent} from './shared/ingredient/ingredient.component';
+import {PotionComponent} from './shared/potion/potion.component';
+import {WebStorageModule} from 'ngx-store';
+import {NewPotionService} from './shared/new-potion.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,12 @@ import { PotionComponent } from './potion/potion.component';
   ],
   imports: [
     DragulaModule,
+    WebStorageModule,
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    NewPotionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
