@@ -9,6 +9,7 @@ import {IngredientComponent} from './shared/ingredient/ingredient.component';
 import {PotionComponent} from './shared/potion/potion.component';
 import {WebStorageModule} from 'ngx-store';
 import {NewPotionService} from './shared/new-potion.service';
+import {MundanePotionService} from "./shared/mundane-potion.service";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {NewPotionService} from './shared/new-potion.service';
     BrowserModule
   ],
   providers: [
-    NewPotionService
+    NewPotionService,
+    MundanePotionService
   ],
   bootstrap: [AppComponent]
 })
