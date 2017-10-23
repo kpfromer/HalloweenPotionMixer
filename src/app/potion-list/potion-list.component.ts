@@ -13,14 +13,10 @@ export class PotionListComponent implements OnInit {
   @LocalStorage() potions: Potion[] = [];
 
   constructor(private potionService: NewPotionService) {
-    this.potionService.newPotion.subscribe(newPotion => {
-      if (this.potions.filter(potion => potion.name === newPotion.name).length === 0)
-        this.potions.push(newPotion);
-    });
+    this.potionService.newPotion.subscribe(newPotion => this.potions.push(newPotion));
   }
 
   ngOnInit() {
-    console.log(this.potions);
   }
 
 }
