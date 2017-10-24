@@ -3,5 +3,5 @@
 </p>
 
 <div [dragula]='"potion-bag"' [dragulaModel]='potions' class="list">
-  <app-potion *ngFor="let potion of potions" [potion]="potion"></app-potion>
+  <app-potion *ngFor="let potion of potions" [potion]="potion" (click)="click(potion)"></app-potion>
 </div>
