@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {Ingredient} from '../model/ingredient';
 import {DragulaService} from 'ng2-dragula';
-import {isEqual, sortBy} from 'lodash';
-import {Potion} from '../model/potion';
+import {isEqual, map, sortBy} from 'lodash';
 import {LocalStorage} from 'ngx-store';
 import {NewPotionService} from '../shared/new-potion.service';
 import {MundanePotionService} from "../shared/mundane-potion.service";
+import {RecipesService} from "../shared/recipes.service";
 
 @Component({
   selector: 'app-cauldron-list',
@@ -14,11 +14,10 @@ import {MundanePotionService} from "../shared/mundane-potion.service";
 })
 export class CauldronListComponent implements OnInit {
 
-  @LocalStorage('potionRecipes') potionRecipes: Array<Potion> = [];
-
   @LocalStorage('cauldronIngredients') ingredients: Array<Ingredient> = [];
 
-  constructor(dragulaService: DragulaService, private potionService: NewPotionService, private mundanePotion: MundanePotionService) {
+  constructor(dragulaService: DragulaService, private potionService: NewPotionService,
+              private mundanePotion: MundanePotionService, private recipeService: RecipesService) {
     dragulaService.dropModel.subscribe(() => this.onDrop());
     dragulaService.removeModel.subscribe(() => this.onDrop());
   }
@@ -27,8 +26,11 @@ export class CauldronListComponent implements OnInit {
     if (this.ingredients.length !== 2) {
       return false;
     } else if (this.ingredients.length >= 2) {
-      for (const potionRecipe of this.potionRecipes) {
-        if (isEqual(sortBy(potionRecipe.ingredients, 'name'), sortBy(this.ingredients, 'name'))) {
+      for (const potionRecipe of this.recipeService.potionRecipes) {
+        const potionRecipeIngredients = map(potionRecipe.ingredients, 'name').sort();
+        const currentIngredients = map(this.ingredients, 'name').sort();
+
+        if (isEqual(currentIngredients, potionRecipeIngredients)) {
           this.potionService.createNewPotion(potionRecipe);
           return this.ingredients = [];
         }
