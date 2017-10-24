@@ -10,6 +10,7 @@ import {PotionComponent} from './shared/potion/potion.component';
 import {WebStorageModule} from 'ngx-store';
 import {NewPotionService} from './shared/new-potion.service';
 import {MundanePotionService} from "./shared/mundane-potion.service";
+import {RecipesService} from "./shared/recipes.service";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MundanePotionService} from "./shared/mundane-potion.service";
   ],
   providers: [
     NewPotionService,
-    MundanePotionService
+    MundanePotionService,
+    RecipesService
   ],
   bootstrap: [AppComponent]
 })
