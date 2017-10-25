@@ -20,6 +20,11 @@ export class PotionListComponent implements OnInit {
       realPotion.effect();
     else
       this.mundanePotion.potion.effect();
+
+    const index = this.potions.indexOf(potion);
+    if (index !== -1) {
+      this.potions.splice(index, 1);
+    }
   }
 
   constructor(private potionService: NewPotionService, private recipeService: RecipesService, private mundanePotion: MundanePotionService) {
