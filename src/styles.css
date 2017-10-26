@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+.everything-outer {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/spooky-background.jpg');
+  background-size: cover;
+  background-position: 50% 100%;
+  font-family: "Creepster", "Helvetica", Arial, sans-serif;
+}
+
+.container.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -15,3 +34,62 @@
   flex: 1;
 }
 
+.ingredients {
+  left: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #d5d5d5;
+  width: 32.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.cauldron {
+  height: 50rem;
+  width: 30rem;
+  position: absolute !important;
+  right: 30%;
+  bottom: -10%;
+  z-index: 1;
+}
+
+.cauldron-img {
+  position: absolute;
+  width: auto;
+  height: 75vh;
+  pointer-events: none;
+  z-index: -100;
+}
+
+.cauldron-front {
+  z-index: 100;
+}
+
+#cauldron {
+  z-index: -1;
+}
+
+.cauldron-ingredients > .ingredient-card:nth-child(1) {
+  transform: translateX(3rem) rotate(20deg);
+}
+
+.cauldron-ingredients > .ingredient-card:nth-child(2) {
+  transform: translateX(4rem) rotate(15deg);
+  position: absolute;
+}
+
+.gu-transit > .ingredient-card:nth-child(1) {
+  transform: translateX(2rem) rotate(5deg);
+  position: absolute;
+}
+
+.potions {
+  height: 50vh;
+  width: 30rem;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
