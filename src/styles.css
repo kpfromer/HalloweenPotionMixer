@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Creepster');
 
+body { overflow: hidden; }
+
 .everything-outer {
   height: 100vh;
   width: 100vw;
@@ -35,15 +37,27 @@
 }
 
 .ingredients {
-  left: 0;
   height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #d5d5d5;
   width: 32.5rem;
   position: absolute;
   left: 0;
   top: 0;
   height: 100vh;
+}
+
+.potions {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 33rem;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .cauldron {
@@ -83,13 +97,4 @@
 .gu-transit > .ingredient-card:nth-child(1) {
   transform: translateX(2rem) rotate(5deg);
   position: absolute;
-}
-
-.potions {
-  height: 50vh;
-  width: 30rem;
-  position: absolute !important;
-  right: 0;
-  top: 0;
-  z-index: 1;
 }

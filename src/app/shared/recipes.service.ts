@@ -8,45 +8,45 @@ export class RecipesService {
 
   ingredientList: IngredientList = new IngredientList([
     new Ingredient({
-      name: 'Standardized Tests', imageUrl: ''
+      name: 'Standardized Tests', imageUrl: 'test.jpg'
     }),
     new Ingredient({
-      name: 'College', imageUrl: ''
+      name: 'College', imageUrl: 'college.jpg'
     }),
     new Ingredient({
-      name: 'Phone', imageUrl: ''
+      name: 'Phone', imageUrl: 'phone.jpg'
     }),
     new Ingredient({
-      name: 'Computer', imageUrl: ''
+      name: 'Computer', imageUrl: 'computer.jpg'
     }),
     new Ingredient({
-      name: 'A Panther', imageUrl: ''
+      name: 'A Panther', imageUrl: 'panther.jpg'
     }),
     new Ingredient({
-      name: 'A Knight', imageUrl: ''
+      name: 'A Knight', imageUrl: 'knight.jpg'
     }),
     new Ingredient({
-      name: 'BVSD', imageUrl: ''
+      name: 'BVSD', imageUrl: 'bvsd.png'
     }),
     new Ingredient({
-      name: 'Cookies', imageUrl: ''
+      name: 'Cookies', imageUrl: 'cookies.jpg'
     }),
     new Ingredient({
-      name: 'Football', imageUrl: ''
+      name: 'Football', imageUrl: 'football.jpg'
     }),
     new Ingredient({
-      name: 'Pumpkin', imageUrl: ''
+      name: 'Pumpkin', imageUrl: 'pumpkin.jpg'
     }),
     new Ingredient({
-      name: 'fairviewhs.org', imageUrl: ''
+      name: 'fairviewhs.org', imageUrl: 'site.png'
     })
   ]);
 
   potionRecipes: Array<Potion> = [
     // Standardized Tests
     new Potion({
-      name: 'Stress Explosion',
-      imageUrl: 'http://www.helpguide.org/images/stress/stressed-man-500.jpg',
+      name: 'Stress',
+      imageUrl: 'stress.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
@@ -57,7 +57,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Laziness',
-      imageUrl: '',
+      imageUrl: 'lazy.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
@@ -67,7 +67,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Procrastination',
-      imageUrl: '',
+      imageUrl: 'procrastinate.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
@@ -78,7 +78,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Money',
-      imageUrl: '',
+      imageUrl: 'money.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
@@ -89,7 +89,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Procrastination',
-      imageUrl: '',
+      imageUrl: 'procrastinate.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
@@ -100,7 +100,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Honors',
-      imageUrl: '',
+      imageUrl: 'honors.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
@@ -112,7 +112,7 @@ export class RecipesService {
     // College
     new Potion({
       name: 'Insomnia',
-      imageUrl: '',
+      imageUrl: 'insomnia.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'College',
@@ -123,7 +123,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Stress',
-      imageUrl: '',
+      imageUrl: 'stress.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'College',
@@ -134,7 +134,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Stress',
-      imageUrl: '',
+      imageUrl: 'stress.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'College',
@@ -145,7 +145,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Concussion',
-      imageUrl: '',
+      imageUrl: 'concussion.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'College',
@@ -159,7 +159,7 @@ export class RecipesService {
 
     new Potion({
       name: 'Happiness', // todo: puppy explosion
-      imageUrl: '',
+      imageUrl: 'happy.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Phone',
@@ -170,7 +170,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'BVSD Error',
-      imageUrl: '',
+      imageUrl: 'bvsd.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'Phone',
@@ -181,7 +181,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Web Cookie',
-      imageUrl: '',
+      imageUrl: 'cookie.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'Phone',
@@ -192,7 +192,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Pinterest Board',
-      imageUrl: '',
+      imageUrl: 'pinterest.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'Phone',
@@ -202,7 +202,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Mobile Site',
-      imageUrl: '',
+      imageUrl: 'mobile.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'Phone',
@@ -215,7 +215,7 @@ export class RecipesService {
 
     new Potion({
       name: 'Fairview Web Team',
-      imageUrl: '',
+      imageUrl: 'web-team.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -226,7 +226,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Rivalry',
-      imageUrl: '',
+      imageUrl: 'rivalry.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -237,7 +237,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'BVSD Error',
-      imageUrl: '',
+      imageUrl: 'bvsd.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -248,7 +248,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'IB Store',
-      imageUrl: '',
+      imageUrl: 'store.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -259,7 +259,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Rivalry',
-      imageUrl: '',
+      imageUrl: 'rivalry.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -270,7 +270,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Trick or Treat Street',
-      imageUrl: '',
+      imageUrl: 'trick-or-treat.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -281,7 +281,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Fairview Web Team',
-      imageUrl: '',
+      imageUrl: 'web-team.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
@@ -294,7 +294,7 @@ export class RecipesService {
 
     new Potion({
       name: 'BVSD Error',
-      imageUrl: '',
+      imageUrl: 'bvsd.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
@@ -305,7 +305,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Rivalry',
-      imageUrl: '',
+      imageUrl: 'rivalry.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
@@ -316,7 +316,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'mr skeltal',
-      imageUrl: '',
+      imageUrl: 'skeleton.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
@@ -327,7 +327,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'April Fools',
-      imageUrl: '',
+      imageUrl: 'april-fools.jpj',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
@@ -341,7 +341,7 @@ export class RecipesService {
 
     new Potion({
       name: 'Web Cookie',
-      imageUrl: '',
+      imageUrl: 'cookie.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Cookie',
@@ -355,7 +355,7 @@ export class RecipesService {
 
     new Potion({
       name: 'mr skeltal',
-      imageUrl: '',
+      imageUrl: 'skeleton.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'BVSD',
@@ -369,7 +369,7 @@ export class RecipesService {
 
     new Potion({
       name: 'mr skeltal',
-      imageUrl: '',
+      imageUrl: 'skeleton.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'fairviewhs.org',
