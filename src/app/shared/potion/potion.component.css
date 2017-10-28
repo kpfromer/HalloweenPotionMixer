@@ -16,6 +16,7 @@
 .potion-card .potion-img {
   width: 30%;
   margin: 0 1rem 0 0;
+  background-color: #eee;
   background-size: cover;
   background-position: center;
 }

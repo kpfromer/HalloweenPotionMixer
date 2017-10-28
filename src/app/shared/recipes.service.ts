@@ -316,7 +316,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'mr skeltal',
-      imageUrl: 'skeleton.jpg',
+      imageUrl: 'mr-skeletal.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
@@ -327,7 +327,7 @@ export class RecipesService {
     }),
     new Potion({
       name: 'April Fools',
-      imageUrl: 'april-fools.jpj',
+      imageUrl: 'april-fools.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
@@ -355,7 +355,7 @@ export class RecipesService {
 
     new Potion({
       name: 'mr skeltal',
-      imageUrl: 'skeleton.png',
+      imageUrl: 'mr-skeletal.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'BVSD',
@@ -369,7 +369,7 @@ export class RecipesService {
 
     new Potion({
       name: 'mr skeltal',
-      imageUrl: 'skeleton.png',
+      imageUrl: 'mr-skeletal.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'fairviewhs.org',
