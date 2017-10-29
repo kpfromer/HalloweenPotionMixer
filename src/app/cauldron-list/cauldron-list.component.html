@@ -1,5 +1,5 @@
-<img src="../../assets/cauldron-full.png" class="cauldron-img" />
-<img src="../../assets/cauldron-front.png" class="cauldron-img cauldron-front" />
+<img src="./assets/cauldron-full.png" class="cauldron-img" />
+<img src="./assets/cauldron-front.png" class="cauldron-img cauldron-front" />
 
 <div [dragula]='"ingredients-bag"' [dragulaModel]='ingredients' class="list" id="cauldron">
   <app-ingredient class="cauldron-ingredients" *ngFor="let ingredient of ingredients" [ingredient]="ingredient"></app-ingredient>

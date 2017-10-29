@@ -5,6 +5,6 @@ export class Ingredient {
 
   constructor(details: { name: string, imageUrl: string }) {
     this.name = details.name;
-    this.imageUrl = "../assets/ingredients/" + details.imageUrl;
+    this.imageUrl = "./assets/ingredients/" + details.imageUrl;
   }
 }
