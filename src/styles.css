@@ -98,3 +98,32 @@ body { overflow: hidden; }
   transform: translateX(2rem) rotate(5deg);
   position: absolute;
 }
+
+.home-link {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0.25em;
+  bottom: 0.25em;
+  z-index: 1000;
+}
+
+.home-link:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.stress {
+  animation: stress 0.5s linear infinite;
+}
+
+@keyframes stress {
+  0% {transform: scale(1) translate(0, 0);}
+  20% {transform: scale(1.05) translate(2px, 5px)}
+  40% {transform: scale(1.075) translate(-4px, -2px)}
+  60% {transform: scale(0.975) translate(3px, 0px)}
+  80% {transform: scale(1.035) translate(4px, 2px)}
+  100% {transform: scale(1) translate(0, 0);}
+}

@@ -13,6 +13,10 @@
   overflow: hidden;
 }
 
+.potion-card:hover {
+  transform: scale(1.05);
+}
+
 .potion-card .potion-img {
   width: 30%;
   margin: 0 1rem 0 0;
