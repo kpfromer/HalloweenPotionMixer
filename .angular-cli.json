@@ -23,7 +23,9 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/dragula/dist/dragula.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "./assets/example.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
