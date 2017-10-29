@@ -5,6 +5,7 @@ body { overflow: hidden; }
 .everything-outer {
   height: 100vh;
   width: 100vw;
+  position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -115,8 +116,34 @@ body { overflow: hidden; }
   color: #fff;
 }
 
+.concussion-outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e7e8e9;
+  z-index: 10000;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.stress-message {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  color: #b00;
+  font-weight: 900;
+  font-size: 8rem;
+  text-align: center;
+  z-index: 1000;
+  animation: stress 1s linear infinite;
+}
+
 .stress {
-  animation: stress 0.5s linear infinite;
+  animation: stress 0.35s linear infinite;
 }
 
 @keyframes stress {

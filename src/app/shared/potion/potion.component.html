@@ -1,4 +1,4 @@
-<div class="row potion-card">
+<div class="row potion-card" id="{{potion.name.split(' ').join('-').toLowerCase()}}">
   <div class="potion-img" [ngStyle]="{ 'background-image': 'url(' + potion.imageUrl + ')'}"></div>
   <h1 class="col-sm-6">
     {{potion.name}}

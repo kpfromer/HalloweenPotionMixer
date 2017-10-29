@@ -24,7 +24,7 @@
         "../node_modules/dragula/dist/dragula.css"
       ],
       "scripts": [
-        "./assets/example.js"
+        "./assets/script.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -35,7 +35,7 @@ export class RecipesService {
       name: 'Football', imageUrl: 'football.jpg'
     }),
     new Ingredient({
-      name: 'Pumpkin', imageUrl: 'pumpkin.jpg'
+      name: 'Pumpkins', imageUrl: 'pumpkin.jpg'
     }),
     new Ingredient({
       name: 'fairviewhs.org', imageUrl: 'site.png'
@@ -53,17 +53,17 @@ export class RecipesService {
         'College'
       ],
       effect: () => {
-      } // todo: shake screen
+      }
     }),
     new Potion({
-      name: 'Laziness',
-      imageUrl: 'lazy.jpg',
+      name: 'Procrastination',
+      imageUrl: 'procrastinate.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'Standardized Tests',
         'A Phone'
       ],
-      effect: () => window.location.href = 'http://www.coolmath-games.com'
+      effect: () => {}
     }),
     new Potion({
       name: 'Procrastination',
@@ -119,8 +119,9 @@ export class RecipesService {
         'A Panther'
       ],
       effect: () => {
-      } // todo: ?
+      }
     }),
+
     new Potion({
       name: 'Stress',
       imageUrl: 'stress.jpg',
@@ -129,8 +130,10 @@ export class RecipesService {
         'College',
         'A Knight'
       ],
-      effect: () => {}
+      effect: () => {
+      }
     }),
+
     new Potion({
       name: 'Stress',
       imageUrl: 'stress.jpg',
@@ -140,7 +143,7 @@ export class RecipesService {
         'Cookies'
       ],
       effect: () => {
-      } // todo: ?
+      }
     }),
     new Potion({
       name: 'Concussion',
@@ -151,7 +154,7 @@ export class RecipesService {
         'Football'
       ],
       effect: () => {
-      } // todo: ?
+      }
     }),
 
     // Phone
@@ -165,10 +168,10 @@ export class RecipesService {
         'A Computer'
       ],
       effect: () => {
-      } // todo: ?
+      }
     }),
     new Potion({
-      name: 'BVSD Error',
+      name: 'Restricted',
       imageUrl: 'bvsd.png',
       ingredientList: this.ingredientList,
       ingredients: [
@@ -180,69 +183,66 @@ export class RecipesService {
     }),
     new Potion({
       name: 'Web Cookie',
-      imageUrl: 'cookie.png',
+      imageUrl: 'cookie.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Phone',
         'Cookies'
       ],
-      effect: () => window.location.href =
-        'http://www.makeuseof.com/tag/whats-a-cookie-and-what-does-it-have-to-do-with-my-privacy-makeuseof-explains/'
+      effect: () => {}
     }),
     new Potion({
       name: 'Web Cookie',
-      imageUrl: 'cookie.png',
+      imageUrl: 'cookie.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Computer',
         'Cookies'
       ],
-      effect: () => window.location.href =
-        'http://www.makeuseof.com/tag/whats-a-cookie-and-what-does-it-have-to-do-with-my-privacy-makeuseof-explains/'
+      effect: () => {}
     }),
     new Potion({
       name: 'Web Cookie',
-      imageUrl: 'cookie.png',
+      imageUrl: 'cookie.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'fairviewhs.org',
         'Cookies'
       ],
-      effect: () => window.location.href =
-        'http://www.makeuseof.com/tag/whats-a-cookie-and-what-does-it-have-to-do-with-my-privacy-makeuseof-explains/'
+      effect: () => {}
     }),
     new Potion({
-      name: 'Pinterest Board',
-      imageUrl: 'pinterest.png',
+      name: 'Pinterest',
+      imageUrl: 'pinterest.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Phone',
-        'Pumpkin'
+        'Pumpkins'
       ],
-      effect: () => window.location.href = 'https://www.pinterest.com/explore/jack-o\'-lantern/?lp=true'
+      effect: () => {}
     }),
     new Potion({
-      name: 'Mobile Site',
+      name: 'The Mobile Site',
       imageUrl: 'mobile.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Phone',
         'fairviewhs.org'
       ],
-      effect: () => window.location.href = 'https://www.fairviewhs.org/?mobile=1'
+      effect: () => {}
     }),
 
     // A Knight
 
     new Potion({
-      name: 'Fairview Web Team',
-      imageUrl: 'web-team.png',
+      name: 'Web Team',
+      imageUrl: 'web-team.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
         'A Computer'
       ],
-      effect: () => window.location.href = 'https://fairviewhs.org/sites/webteam'
+      effect: () => {}
     }),
     new Potion({
       name: 'Rivalry',
@@ -252,7 +252,7 @@ export class RecipesService {
         'A Knight',
         'A Panther'
       ],
-      effect: () => window.location.href = 'https://www.fairviewhs.org/?fools=1'
+      effect: () => {}
     }),
     new Potion({
       name: 'BVSD Error',
@@ -266,15 +266,15 @@ export class RecipesService {
       } // todo: ?
     }),
     new Potion({
-      name: 'IB Store',
-      imageUrl: 'store.png',
+      name: 'Procrastination',
+      imageUrl: 'procrastination.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
         'Cookies'
       ],
       effect: () => {
-      } // todo: ?
+      }
     }),
     new Potion({
       name: 'Rivalry',
@@ -284,15 +284,15 @@ export class RecipesService {
         'A Knight',
         'Football'
       ],
-      effect: () => window.location.href = 'https://www.fairviewhs.org/?fools=1'
+      effect: () => {}
     }),
     new Potion({
-      name: 'Trick or Treat Street',
-      imageUrl: 'trick-or-treat.jpg',
+      name: 'mr skeltal',
+      imageUrl: 'mr-skeletal.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Knight',
-        'Pumpkin'
+        'Pumpkins'
       ],
       effect: () => {
       } // todo: ?
@@ -305,7 +305,7 @@ export class RecipesService {
         'A Knight',
         'fairviewhs.org'
       ],
-      effect: () => window.location.href = 'https://www.fairviewhs.org/'
+      effect: () => {}
     }),
 
     // A Panther
@@ -319,7 +319,7 @@ export class RecipesService {
         'BVSD'
       ],
       effect: () => {
-      } // todo: ?
+      }
     }),
     new Potion({
       name: 'Rivalry',
@@ -329,7 +329,7 @@ export class RecipesService {
         'A Panther',
         'Football'
       ],
-      effect: () => window.location.href = 'https://www.fairviewhs.org/?fools=1'
+      effect: () => {}
     }),
     new Potion({
       name: 'mr skeltal',
@@ -337,10 +337,10 @@ export class RecipesService {
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
-        'Pumpkin'
+        'Pumpkins'
       ],
       effect: () => {
-      } // todo: ?
+      } // todo: ADD THIS
     }),
     new Potion({
       name: 'April Fools',
@@ -364,8 +364,7 @@ export class RecipesService {
         'Cookie',
         'fairviewhs.org'
       ],
-      effect: () =>
-        window.location.href = 'http://www.makeuseof.com/tag/whats-a-cookie-and-what-does-it-have-to-do-with-my-privacy-makeuseof-explains/'
+      effect: () => {}
     }),
 
     // BVSD
@@ -376,10 +375,10 @@ export class RecipesService {
       ingredientList: this.ingredientList,
       ingredients: [
         'BVSD',
-        'Pumpkin'
+        'Pumpkins'
       ],
       effect: () => {
-      } // todo: add
+      }
     }),
 
     // Pumpkin
@@ -390,10 +389,10 @@ export class RecipesService {
       ingredientList: this.ingredientList,
       ingredients: [
         'fairviewhs.org',
-        'Pumpkin'
+        'Pumpkins'
       ],
       effect: () => {
-      } // todo: add
+      }
     })
   ];
 
