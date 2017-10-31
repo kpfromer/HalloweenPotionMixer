@@ -126,6 +126,7 @@ body { overflow: hidden; }
   z-index: 10000;
   background-size: contain;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .stress-message {
@@ -134,7 +135,7 @@ body { overflow: hidden; }
   left: 25%;
   width: 50%;
   height: 50%;
-  color: #b00;
+  color: #b44;
   font-weight: 900;
   font-size: 8rem;
   text-align: center;

@@ -70,6 +70,16 @@ export class RecipesService {
       imageUrl: 'procrastinate.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
+        'College',
+        'A Phone'
+      ],
+      effect: () => {}
+    }),
+    new Potion({
+      name: 'Procrastination',
+      imageUrl: 'procrastinate.jpg',
+      ingredientList: this.ingredientList,
+      ingredients: [
         'Standardized Tests',
         'Cookies'
       ],
@@ -111,8 +121,8 @@ export class RecipesService {
 
     // College
     new Potion({
-      name: 'Insomnia',
-      imageUrl: 'insomnia.jpg',
+      name: 'Stress',
+      imageUrl: 'stress.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'College',
@@ -151,6 +161,17 @@ export class RecipesService {
       ingredientList: this.ingredientList,
       ingredients: [
         'College',
+        'Football'
+      ],
+      effect: () => {
+      }
+    }),
+    new Potion({
+      name: 'Concussion',
+      imageUrl: 'concussion.jpg',
+      ingredientList: this.ingredientList,
+      ingredients: [
+        'Cookies',
         'Football'
       ],
       effect: () => {
@@ -255,7 +276,7 @@ export class RecipesService {
       effect: () => {}
     }),
     new Potion({
-      name: 'BVSD Error',
+      name: 'Restricted',
       imageUrl: 'bvsd.png',
       ingredientList: this.ingredientList,
       ingredients: [
@@ -272,6 +293,17 @@ export class RecipesService {
       ingredients: [
         'A Knight',
         'Cookies'
+      ],
+      effect: () => {
+      }
+    }),
+    new Potion({
+      name: 'Procrastination',
+      imageUrl: 'procrastination.jpg',
+      ingredientList: this.ingredientList,
+      ingredients: [
+        'A Knight',
+        'A Phone'
       ],
       effect: () => {
       }
@@ -298,7 +330,7 @@ export class RecipesService {
       } // todo: ?
     }),
     new Potion({
-      name: 'Fairview Web Team',
+      name: 'Web Team',
       imageUrl: 'web-team.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
@@ -311,11 +343,33 @@ export class RecipesService {
     // A Panther
 
     new Potion({
-      name: 'BVSD Error',
+      name: 'Restricted',
       imageUrl: 'bvsd.png',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',
+        'BVSD'
+      ],
+      effect: () => {
+      }
+    }),
+    new Potion({
+      name: 'Restricted',
+      imageUrl: 'bvsd.png',
+      ingredientList: this.ingredientList,
+      ingredients: [
+        'A Computer',
+        'BVSD'
+      ],
+      effect: () => {
+      }
+    }),
+    new Potion({
+      name: 'Restricted',
+      imageUrl: 'bvsd.png',
+      ingredientList: this.ingredientList,
+      ingredients: [
+        'A Phone',
         'BVSD'
       ],
       effect: () => {
@@ -343,8 +397,8 @@ export class RecipesService {
       } // todo: ADD THIS
     }),
     new Potion({
-      name: 'April Fools',
-      imageUrl: 'april-fools.jpg',
+      name: 'Rivalry',
+      imageUrl: 'rivalry.jpg',
       ingredientList: this.ingredientList,
       ingredients: [
         'A Panther',

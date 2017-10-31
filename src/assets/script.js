@@ -8,15 +8,38 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 var stress = function() {
   $("body").addClass("stress");
-  $(".relative-full").append("<h1 class='stress-message'>REMINDER THAT EA/ED COLLEGE APPS ARE DUE TOMORROW!!!!</h1>");
+  $(".relative-full").append("<h1 class='stress-message'>YOU PROBABLY HAVE A LOT OF HOMEWORK YOU SHOULD BE DOING!!!!</h1>");
   setTimeout(function() {$("body").removeClass("stress"); $(".stress-message").remove();}, 3000);
 }
 
-var concussion = function(image) {
+var concussion = function(image, time) {
   $(".everything-outer").prepend("<div class='concussion-outer' style='background-image: url(\""+image+"\")'></div>");
   setTimeout(function() {
     $(".concussion-outer").fadeOut(1000);
-  }, 2000);
+  }, time);
+}
+
+//handle browsers that block popups or new tabs with jquery firing events 4+ times
+var redirectTimeout;
+var redirected = false;
+var redirect = function(url) {
+  if(!redirected) {
+    var win = window.open(url, '_blank');
+    if (win) {
+      redirected = true;
+      win.focus();
+    } else {
+      clearTimeout(redirectTimeout);
+      redirectTimeout = setTimeout(function() {
+        if(!redirected) {
+          window.location.href = url;
+        }
+      }, 500);
+    }
+    setTimeout(function() {
+      redirected = false;
+    }, 750);
+  }
 }
 
 $(document).ready(function() {
@@ -30,37 +53,39 @@ $(document).ready(function() {
             stress();
             break;
           case "procrastination":
-            window.location.href = 'http://www.coolmath-games.com';
+            redirect('http://www.coolmath-games.com');
             break;
           case "concussion":
-            concussion('');
+            concussion('', 2000);
             break;
           case "happiness":
-            window.location.href = 'http://bfy.tw/70tE';
+            redirect('http://bfy.tw/70tE');
             break;
           case "restricted":
-            concussion("assets/potions/blocked.png");
+            concussion("assets/potions/blocked.png", 2000);
             break;
           case "web-cookie":
-            window.location.href = 'http://www.makeuseof.com/tag/whats-a-cookie-and-what-does-it-have-to-do-with-my-privacy-makeuseof-explains/'
+            redirect('http://www.makeuseof.com/tag/whats-a-cookie-and-what-does-it-have-to-do-with-my-privacy-makeuseof-explains/');
             break;
           case "pinterest":
-            window.location.href = "https://www.pinterest.com/explore/jack-o\'-lantern/?lp=true";
+            redirect("https://www.pinterest.com/explore/jack-o\'-lantern/?lp=true");
             break;
           case "the-mobile-site":
-            window.location.href = 'https://www.fairviewhs.org/?mobile=1';
+            redirect('https://www.fairviewhs.org/?mobile=1');
             break;
           case "web-team":
-            window.location.href = 'https://fairviewhs.org/sites/webteam';
+            redirect('https://fairviewhs.org/sites/webteam');
             break;
           case "rivalry":
-            window.location.href = 'https://www.fairviewhs.org/?fools=1';
+            redirect('https://www.fairviewhs.org/?fools=1');
             break;
           case "mr-skeltal":
-            console.log("get spooked"); //TODO: MAKE THIS ACTIVATE MR SKELTAL
+            redirect('https://www.fairviewhs.org/#thankmrskeltal');
+            break;
+          case "mundane-potion":
+            concussion('', 10);
             break;
           default:
-            console.log("mundane potion");
             break;
         }
       }, 50);
