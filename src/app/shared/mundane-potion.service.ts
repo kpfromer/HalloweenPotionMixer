@@ -6,7 +6,7 @@ export class MundanePotionService {
 
   potion = new Potion({
     name: 'Mundane Potion',
-    imageUrl: '',
+    imageUrl: 'nothing.jpg',
     effect: () => console.log('Hello')
   });
 

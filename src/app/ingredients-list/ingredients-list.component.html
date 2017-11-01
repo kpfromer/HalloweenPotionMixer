@@ -1,6 +1,6 @@
-<p>
-  ingredients-list works!
-</p>
+<h1 class="list-header">
+  INGREDIENTS
+</h1>
 
 <div [dragula]='"ingredients-bag"' [dragulaModel]='ingredients' class="list" id="ingredients">
   <app-ingredient *ngFor="let ingredient of ingredients" [ingredient]="ingredient"></app-ingredient>

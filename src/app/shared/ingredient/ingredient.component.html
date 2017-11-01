@@ -1,5 +1,4 @@
-<div class="row">
-  <img [src]="ingredient.imageUrl" [alt]="ingredient.name" height="100" width="100" class="col-sm-6">
+<div class="row ingredient-card" [ngStyle]="{ 'background-image': 'url(' + ingredient.imageUrl + ')'}">
   <h1 class="col-sm-6">
     {{ingredient.name}}
   </h1>

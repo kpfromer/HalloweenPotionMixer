@@ -1,5 +1,5 @@
-<div class="row">
-  <img [src]="potion.imageUrl" [alt]="potion.name" height="100" width="100" class="col-sm-6">
+<div class="row potion-card" id="{{potion.name.split(' ').join('-').toLowerCase()}}">
+  <div class="potion-img" [ngStyle]="{ 'background-image': 'url(' + potion.imageUrl + ')'}"></div>
   <h1 class="col-sm-6">
     {{potion.name}}
   </h1>

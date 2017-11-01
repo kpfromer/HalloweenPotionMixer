@@ -21,10 +21,15 @@ export class PotionListComponent implements OnInit {
     else
       this.mundanePotion.potion.effect();
 
-    const index = this.potions.indexOf(potion);
-    if (index !== -1) {
-      this.potions.splice(index, 1);
+    var that = this;
+    var removePotion = function() {
+      const index = that.potions.indexOf(potion);
+      if (index !== -1) {
+        that.potions.splice(index, 1);
+      }
     }
+
+    setTimeout(removePotion, 25);
   }
 
   constructor(private potionService: NewPotionService, private recipeService: RecipesService, private mundanePotion: MundanePotionService) {

@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+body { overflow: hidden; }
+
+.everything-outer {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/spooky-background.jpg');
+  background-size: cover;
+  background-position: 50% 100%;
+  font-family: "Creepster", "Helvetica", Arial, sans-serif;
+}
+
+.container.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -15,3 +37,121 @@
   flex: 1;
 }
 
+.ingredients {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #d5d5d5;
+  width: 32.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.potions {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 33rem;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.cauldron {
+  height: 50rem;
+  width: 30rem;
+  position: absolute !important;
+  right: 30%;
+  bottom: -10%;
+  z-index: 1;
+}
+
+.cauldron-img {
+  position: absolute;
+  width: auto;
+  height: 75vh;
+  pointer-events: none;
+  z-index: -100;
+}
+
+.cauldron-front {
+  z-index: 100;
+}
+
+#cauldron {
+  z-index: -1;
+}
+
+.cauldron-ingredients > .ingredient-card:nth-child(1) {
+  transform: translateX(3rem) rotate(20deg);
+}
+
+.cauldron-ingredients > .ingredient-card:nth-child(2) {
+  transform: translateX(4rem) rotate(15deg);
+  position: absolute;
+}
+
+.gu-transit > .ingredient-card:nth-child(1) {
+  transform: translateX(2rem) rotate(5deg);
+  position: absolute;
+}
+
+.home-link {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0.25em;
+  bottom: 0.25em;
+  z-index: 1000;
+}
+
+.home-link:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.concussion-outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e7e8e9;
+  z-index: 10000;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.stress-message {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  color: #b44;
+  font-weight: 900;
+  font-size: 8rem;
+  text-align: center;
+  z-index: 1000;
+  animation: stress 1s linear infinite;
+}
+
+.stress {
+  animation: stress 0.35s linear infinite;
+}
+
+@keyframes stress {
+  0% {transform: scale(1) translate(0, 0);}
+  20% {transform: scale(1.05) translate(2px, 5px)}
+  40% {transform: scale(1.075) translate(-4px, -2px)}
+  60% {transform: scale(0.975) translate(3px, 0px)}
+  80% {transform: scale(1.035) translate(4px, 2px)}
+  100% {transform: scale(1) translate(0, 0);}
+}
